@@ -1,12 +1,11 @@
-create database login;
-use login;  
+use biblioteca;
 
-create table user (
-idUser int primary key, 
-username varchar(20) not null, 
-password varchar (8) not null 
-);
+alter table usuario
+modify senha int not null auto_increment;
 
-insert into user values (1, 'karen', 'admin');
+desc usuario;
 
-select * from user;
+select * from usuario;
+
+insert into usuario (email) values ('juliana@example.com');
+insert into usuario (email) values ('mariana@example.com');

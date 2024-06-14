@@ -9,7 +9,7 @@ const db = mysql.createConnection({
 host: 'localhost',
 user: 'karen',
 password: '1234',
-database: 'login'
+database: 'login    '
 })
 
 db.connect((error)=> {
@@ -47,5 +47,5 @@ app.post("/login", (req, res)=>{
 })
 
 app.listen(port,()=>{
-console.log(`servidor rodando no endereço: https://localhost:${port}`)
+console.log(`   servidor rodando no endereço: https://localhost:${port}`)
 })

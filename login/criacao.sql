@@ -7,6 +7,6 @@ username varchar(20) not null,
 password varchar (8) not null 
 );
 
-insert into user values (1, 'Karen', '123');
+insert into user values (1, 'karen', 'admin');
 
 select * from user;
